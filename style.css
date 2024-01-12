@@ -1,0 +1,349 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:  #081b29;
+    size: 100%;
+}
+
+header{
+    padding: 10px 8px;
+    margin: 2px 30px;
+    
+}
+
+.animate-on-scroll {
+    opacity: 0;
+    animation: fadeInUp 1s ease-out forwards;
+}
+
+.navbar a, li{
+    text-decoration: none;
+    list-style: none;
+    position: relative;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    margin: 0 20px;
+    position: relative;
+    color: #0ef;
+    animation:  slideRight .1s ease;
+}
+
+.navbar ul li {
+    display: inline;
+    text-align: center;
+    margin: 0 40px;
+    padding: 0 40px;
+}
+
+.navbar ul li a{
+    color: aqua;
+    font-size: 28px;
+}
+
+.navbar ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #0ef;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.2s;
+}
+
+.navbar ul li a:hover::after{
+    width: 100%;
+
+}
+
+.home {
+    margin-top: 10%;
+    font-size: 30px;
+}
+
+.home h1, h3{
+    font-size: 58px;
+    color: #fff;
+}
+
+.home span{
+    color: #0ef;
+}
+
+.home p{
+    font-size: 40px;
+    color: #fff;
+}
+
+/* --------------------grid---------------------- */
+
+.grid{
+    display: grid;
+    margin: 0 30px;
+    grid-template-columns: repeat(3, auto);
+    animation: slideBottom 5.s ease-in;
+}
+
+.grid-content{
+    background: #0ef;
+    padding: 10em ;
+    border-radius: 10px;
+}
+
+.grid:hover{
+    transform: translate(X)(2em);
+}
+
+.grid-content h2{
+    font-size: 60px;
+}
+
+.grid-content h4{
+    font-size: 30px;
+}
+
+/* ---------------about me-------------------- */
+
+.about-me{
+    position: relative;
+    margin: 80px 0;
+    padding: 20px 40px;
+    background-color: #042237;
+}
+
+.about-me h2{
+    top: 10px;
+    font-size: 60px;
+    color: #fff;
+    text-align: center;
+}
+
+.about-me-container{
+    font-size: 35px;
+    color: #fff;
+    display: flex;
+    margin-left: 40px;
+}
+
+.about-me-container img{
+    border-radius: 50px;
+
+}
+
+.about-me-text {
+    margin-left: 100px;
+    text-align: justify;
+}
+
+.about-me-text h4{
+    color: #0ef;
+}
+
+i{
+    font-size: 100px;
+}
+
+/* ----skils ------*/
+.skills{
+    margin:  20px 0;
+}
+
+.skills h2{
+    font-size: 60px;
+    color: #fff;
+}
+
+.skills p{
+    font-size: 30px;
+    color: #fff;
+}
+
+.skills {
+    font-size: 35px;
+    text-align: center;
+}
+
+.skills .border-skills{
+    display: flex;
+    justify-content: center;
+
+}
+
+.skills .border-skills ul{
+    background-color: #01253f;
+    text-align: center;
+    border-radius: 20px;
+    transition: background 0.6s, transform 0.5s;
+    width: 10em;
+    height: 10.6em;
+    margin: 0 20px;
+}
+
+.border-skills i{
+    font-size: 4em;
+    margin-right: 30px;
+    color: #fff;
+}
+
+.border-skills ul:hover{
+    background: #0ef;
+    transform: translateY(-30px);
+}
+/* ------Project -------------------- */
+.my-project {
+    max-width: 500px;
+
+}
+
+
+.project h2{
+    font-size: 60px;
+    color: #fff;
+    text-align: center;
+}
+
+.project p{
+    font-size: 2em;
+    color: #fff;
+    text-align: center;
+}
+
+.project img{
+    padding: 10px 20px;
+    width: 50%;
+}
+
+.project a{
+    text-decoration: none;
+    color: #fff;
+    padding: 2em 4em;
+    background-color: #0ef;
+    position: static;
+}
+
+
+/* --------social media------------------------- */
+.social-media{
+    margin: 20px 0;
+    background-color: #042237;
+    padding: 40px 30px;
+    border-radius: 18px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+}
+
+.social-media h2{
+    font-size: 60px;
+    padding: 0 15px;
+    color: #fff;
+    position: static;
+}
+
+
+
+.social-media-icons, i {
+    display: inline-flex;
+    border-radius: 50px;
+    color: #0ef;
+    justify-content: space-between;
+}
+
+.social-media-icons i{
+    border: #0ef 1px solid;
+    margin: 0 30px;
+    position: relative;
+    font-size: 80px;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-media i:hover{
+    background: #0ef;
+    color: #000000;
+    box-shadow: 0 0 20px #0ef;
+}
+
+/* --------footer------ */
+ footer {
+    background-color: #081b29;
+    color: #fff;
+    text-align: center;
+    padding: 40px;
+}
+
+
+/* ---media  */
+@media (max-width: 1366px){
+    html{
+        font-size: 62.5;
+    }
+}
+
+/* ----Slideright */
+
+@keyframes  slideRight {
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+    
+}
+@keyframes   slideTop {
+    0%{
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+    
+}
+@keyframes   slideBottom {
+    0%{
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+    
+}
+@keyframes   slideLeft {
+    0%{
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+    
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

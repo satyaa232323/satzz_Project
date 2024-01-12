@@ -1,0 +1,312 @@
+:root{
+    --background-color: #120F0F;
+    --logo-color:  #00AEEF;
+    --font-color: #fff;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins',sans-serif;
+    background-color: var(--background-color);
+}
+
+header{
+    padding: 1em 1.2em;
+    margin: 0 1.2em;
+    display: flex;
+}
+
+.logo img{
+    max-width: 4em;
+}
+
+nav{
+    display: flex;
+}
+
+.navbar ul li, a{
+    padding: 0 2em;
+    text-decoration: none;
+    list-style-type: none;
+    display: inline-block;
+    color: var(--logo-color);
+    font-size: 20px;
+    position: relative;
+}
+
+.navbar ul li a::after{
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -2px;
+}
+
+.navbar a::after {
+    content: "";
+    display: block;
+    height: 2px; /* Height of the line */
+    width: 0;
+    background-color: white; /* Color of the line */
+    position: absolute;
+    bottom: 0;
+    transition: width 0.3s ease; /* Transition effect for width */
+}
+
+/* Hover effect for the line */
+.navbar a:hover::after {
+    width: 100%;
+}
+
+/* --home */
+.home{
+    padding: 1em 1.2em;
+    margin: 8em 1.2em;
+    position: relative;
+}
+
+.home-content{
+    color: #fff;
+   margin: 0 0em;
+   background-image: url(Car.png);
+   background-size: 40em;
+   background-repeat: no-repeat;
+   background-position: right;
+}
+
+.home-content img{
+    width: 40em;
+}
+
+.home-content h2{
+    font-size: 3em;
+}
+
+.home-content p{
+    font-size: 2.6em;
+}
+
+    
+.btn{
+    padding: 1.4em 8em;
+    border-radius: 2px;
+    background-color: #00AEEF;
+    outline: none;
+    border: none;
+    transition: 0.3s;
+    font-size: 1.4em;
+    color: var(--font-color);
+    font-weight: bold;
+}
+
+.btn:hover{
+    transform: translateY(-2em);
+}
+
+.grid-box{
+    display: flex;
+    padding: 8em 1em;
+}
+
+.grid-box .grid-text{
+    margin: 0 2em;
+    color: var(--font-color);
+}
+
+.grid-text h2{
+    font-size: 10em;
+}
+
+.grid-text P{
+    font-size: 2em;
+}
+/* --Moodels-- */
+#models{
+    background-color: rgba(62, 62, 62, 0.636);
+    padding: 1em 0em;
+}
+
+.cars-container{
+    padding: 1em 1.2em;
+    margin: 0 1.2em;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+    margin-top: 2em ;
+    position: relative;
+    justify-content: center;
+}
+
+.car-box {
+    width: 40%;
+    flex:  1 1 1 17em;
+    border: 2px solid none;
+    background-color: var(--logo-color);
+    padding: 5 5em;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.car-box img {
+    width: 60%;
+    position: static;
+    transition: 0.2s;
+}
+
+.car-box img:hover{
+    width: 70%;
+}
+
+.car-box h4{
+    padding: 0 1em;
+    color: var(--font-color);
+    font-size: 3em;
+}
+
+.car-box p{
+    padding: 0 1em;
+    font-size: 2em;
+    color: var(--font-color);
+}
+
+.model-text{
+    color: var(--font-color);
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+.model-text h2{
+    font-size: 3em;
+    font-weight: bold;
+}
+
+.model-text p{
+    font-size: 1.6em;
+    top: -30em;
+}
+
+/* --dealers */
+
+.deralers-text{
+    color: var(--font-color);
+    text-align: center;
+}
+.deralers-text h2{
+    font-size: 3em;
+    color: var(--font-color);
+    font-weight: bold;
+}
+
+.dealer-container p{
+    font-size: 1.6em;
+}
+
+.dealer-container {
+    display: flex;
+    justify-content: space-around;
+    padding:  1em 1.2em;
+    margin: 1em 1.2em;
+    flex-wrap: wrap;
+}
+
+.dealer-card {
+    width: 40%;
+    margin: 1em 1.2em;
+    padding: 1em 1.2em;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    justify-content: center;
+}
+
+.dealer-card img {
+    width: 100%;
+    height: auto;
+}
+
+.dealer-card h3 {
+    margin: 15px 0 10px;
+    color: #333;
+}
+
+.dealer-card p {
+    margin: 0;
+    padding: 0 15px 15px;
+    color: #555;
+}
+
+/* --contact-me-- */
+#contact input{
+    color: #040404;
+}
+
+
+.contact {
+    justify-content: center;
+    padding: 2em 0;
+}
+
+.contact-text{
+    text-align: center;
+}
+
+.contact-text h2 {
+    font-size: 3em;
+    color: var(--font-color);
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+    color: #00AEEF;
+}
+
+.contact label {
+    margin-bottom: 5px;
+    color: var(--font-color);
+}
+
+.contact input,
+.contact textarea {
+    margin-bottom: 10px;
+    padding: 1em 20em;
+    border-radius: 1em;
+    color:#040404;
+}
+
+.contact button {
+    background-color:var(--logo-color);
+    color: rgb(0, 0, 0);
+    padding: 1.6em 10em;
+    cursor: pointer;
+    border-radius: 3px;
+    border: none;
+    max-width: 100px;
+    justify-content: center;
+}
+
+.contact button:hover {
+    background-color: #00afef36;
+}
+
+footer {
+    background-color: #1f1d1d;
+    color: var(--font-color);
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
